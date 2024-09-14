@@ -10,7 +10,7 @@ Y="\e[33m"
 N="\e[0m"
 
 VALIDATE(){
-    if [ $1 -ne 0 ]
+    if [ $ -eq 0 ]
     then
         echo -e "$2...$R FAILURE $N"
         exit 1
@@ -30,4 +30,17 @@ fi
 for i in $@
 do
     echo "All packages: $i"
+    dnf install $i &>>$LOGFILE
+    VALIDATE $? "Installation of $i"
+    if [ $? -eq 0 ]
+    then
+        echo "$i already installed...SKIPPING"
+        exit 1
+    else
+        echo "$i not installed...Need to install"
+    fi
 done
+
+
+
+
