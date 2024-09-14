@@ -27,8 +27,8 @@ else
     echo "You are super user."
 fi
 
-dnf install mongodb -y &>>$LOGFILE
-VALIDATE $? "Installing MongoDB"
+dnf install git -y &>>$LOGFILE
+VALIDATE $? "Installing git"
 
 dnf install mysql -y &>>$LOGFILE
 VALIDATE $? "Installing MySQL"
