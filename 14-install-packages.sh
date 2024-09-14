@@ -30,7 +30,7 @@ fi
 for i in $@
 do
     echo "All packages: $i"
-    dnf install $i &>>$LOGFILE
+    dnf install $i -y &>>$LOGFILE
     VALIDATE $? "Installation of $i"
     if [ $? -eq 0 ]
     then
