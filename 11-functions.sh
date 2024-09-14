@@ -37,7 +37,7 @@ free_space=$(df / | grep / | awk '{ print $4 }')
 
 # Use the variable in an if statement
 if [ $free_space -lt 1000000 ]; then
-    echo "Low disk space!"
+    echo "Low disk space!...FAILURE"
 else
-    echo "Sufficient disk space!"
+    echo "Sufficient disk space!...SUCCESS"
 fi
