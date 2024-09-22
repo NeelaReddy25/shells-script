@@ -6,7 +6,7 @@ is_prime() {
     # 1 is not a prime number
     if [ "$num" -le 1 ]; then
         echo "$num is not a prime number."
-        return
+        exit 1
     fi
 
     # Check for factors from 2 to the square root of the number
