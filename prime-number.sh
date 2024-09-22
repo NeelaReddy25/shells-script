@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Read number from user input
+read -p "Enter a number: " number
+
 # Function to check if a number is prime
 is_prime() {
     num=$1
@@ -20,9 +23,6 @@ is_prime() {
     # If no factors are found, it's prime
     echo "$num is a prime number."
 }
-
-# Read number from user input
-read -p "Enter a number: " number
 
 # Call the is_prime function with the user's input
 is_prime $number
