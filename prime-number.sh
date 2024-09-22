@@ -26,3 +26,12 @@ is_prime() {
 
 # Call the is_prime function with the user's input
 is_prime $number
+
+for ((i=1; i<=100; i++))
+do
+      num=$(( $i % 2))
+      if [ $num -ne 0 ]
+      then
+        echo "list of prime numbers: $i"
+      fi
+done
