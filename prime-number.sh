@@ -25,4 +25,4 @@ is_prime() {
 }
 
 # Call the is_prime function with the user's input
-#is_prime $number
+is_prime $number
