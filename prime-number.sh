@@ -1,3 +1,5 @@
+# can you write prime number in bash script?
+
 #!/bin/bash
 
 # Read number from user input

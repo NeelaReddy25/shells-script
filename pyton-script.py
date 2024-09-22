@@ -1,3 +1,5 @@
+# take 2 numbers for A and B next you have to show us A is divisible B and A is not divisible by B both the cases true and false and you have to take the input from the user. these are the constraints in python.
+
 # Take input for A and B from the user
 A = int(input("Enter the first number (A): "))
 B = int(input("Enter the second number (B): "))
